@@ -23,7 +23,7 @@ public class Item {
 
     private Date post_date;
 
-    private Date expiry_date;
+    private String expiry_date;
 
     @ManyToOne
     @JoinColumn(name="user_id")
