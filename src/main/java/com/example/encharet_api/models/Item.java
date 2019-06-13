@@ -21,7 +21,7 @@ public class Item {
 
     private int starting_price;
 
-    private Date post_date;
+    private String post_date;
 
     private String expiry_date;
 
@@ -34,7 +34,7 @@ public class Item {
 
     @PrePersist
     void savePostDate() {
-        this.post_date = new Date();
+        this.post_date = new Date().toString();
     }
 
 }
